@@ -1,0 +1,843 @@
+/* chú ý cực kì quan trọng khi reponsive web thì không nên cho thần cha chứa tổng thể có width cố định  */
+/* vd : app  */
+
+
+/* pc lown  */
+@media (min-width: 64em) and (max-width: 85.375em){
+     .nav__list-item {
+        position: relative;
+        padding: 0 15px;
+    }
+    .tabar-head__info li{
+        margin-left: 10px;
+    }
+    .tabar-head__info-icon {
+        margin-right: 0px;
+        color: #fff;
+    }
+    .nav__list-sub-menu {
+        position: absolute;
+        top: 32px;
+        left: -35px;
+        padding: 40px 0px;
+        min-width: 240px;
+        transform-origin: top;
+        background-color: var(--white-color--);
+        animation: scrollDown linear 0.3s;
+        border-radius: 5px;
+        box-shadow: 0 1px 10px rgb(0 0 0 / 50%);
+        display: none;
+    }
+    .nav__list-sub-menu-2 {
+        position: absolute;
+        right: -240px;
+        background-color: var(--white-color--);
+        min-width: 240px;
+        padding: 40px 0;
+        border-radius: 5px;
+        box-shadow: 0px 1px 10px rgb(0 0 0 / 50%);
+        transform-origin: center;
+        animation: sub-menu-2 linear 0.3s;
+        display: none;
+    }
+    /* slider  */
+    .Slider {
+        position: relative;
+        width: 100%;
+        padding-top: 45%;
+    }
+    .Slider-text__country {
+        font-size: 4rem;
+        color: #fff;
+        position: absolute;
+        top: 30%;
+        left: 25%;
+        font-weight: 600;
+        text-transform: capitalize;
+        transform-origin: top;
+        animation: country 0.3s linear;
+    }
+    .Slider-text__content {
+        color: #fff;
+        font-size: 105px;
+        padding: 100px;
+        font-weight: 800;
+        animation: Slider-text 2.5s linear;
+    }
+    .Slider-text__title-1 {
+        font-size: 6.5rem;
+        color: #fff;
+        font-weight: 600;
+        position: absolute;
+        top: 45%;
+        left: 25%;
+        text-transform: capitalize;
+        transform-origin: left;
+        animation: title-1 1s linear;
+    }
+    .Slider-text__city {
+        position: absolute;
+        color: #fff;
+        top: 41%;
+        left: 68%;
+        font-size: 2rem;
+        text-transform: capitalize;
+        transform-origin: top;
+        animation: country 3s linear;
+    }
+    .Slider-text__tour {
+        font-size: 3.7rem;
+        color: #fff;
+        position: absolute;
+        top: 48%;
+        right: 22%;
+        font-weight: 500;
+        transform-origin: right;
+        animation: tour 3.1s linear;
+    }
+    .Slider-text__sale {
+        font-size: 1rem;
+        color: #fff;
+        background: red;
+        padding: 0 10px;
+        position: absolute;
+        top: 65%;
+        left: 38%;
+        transform-origin: left;
+        animation: title-1 5s linear;
+    }
+    .Slider-text__price {
+        font-size: 4rem;
+        color: #fff;
+        position: absolute;
+        top: 67%;
+        left: 43%;
+        transform-origin: left;
+        animation: price 5.05s linear;
+    }
+    .Slider-text__dola {
+        font-size: 1.5rem;
+        color: #fff;
+        position: absolute;
+        top: 70%;
+        left: 57%;
+        transform-origin: right;
+        animation: tour 5.1s linear;
+    }
+    
+} 
+
+
+/* tablet và moblie  */
+@media (max-width : 1023px){
+   /* tabar  */
+   .tabar-head__info{
+    display: none;
+    }
+    .list-media{
+        display: none;
+    }
+    .tabar-language{
+        flex: 1;
+    }
+    .tabar-user{
+        flex: 1;
+    }
+      /* logo  */
+    .heade-main__logo-img {
+        width: 150px;
+    }
+    .header-main__body-list-icon__list-item {
+        padding-left: 15px;
+    }
+    .header-main__body-list-icon__list-item:first-child {
+        padding-left: 0px;
+    }
+
+    .header-main__body{
+        flex: 0;
+    }
+    
+}
+
+
+
+
+/* tablet  768 - 1023*/
+@media (min-width: 46.25em) and (max-width: 63.9375em){
+    .container {
+        width: 960px;
+        margin: 0 auto;
+    }
+
+    .Perfect-Holiday__head {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 0 152px 100px 152px;
+        text-align: center;
+    }
+    .Breathtaking-Cities__body {
+        text-align: center;
+        position: absolute;
+        bottom: -30px;
+        left: unset;
+    }
+    .Breathtaking-Cities__body-img {
+        width: 70%;
+    }
+    .Review-section-text {
+        font-size: 1.2rem;
+        padding: 0px 170px;
+        margin: 20px 0;
+    }
+
+
+
+
+
+
+
+
+
+
+    .special__section {
+        background-image: url(../img/h1-background-img-1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        background-position: top;
+        height: 1100px;
+    }
+    .special__section__head {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 0px 200px;
+        text-align: center;
+        position: absolute;
+        top: 15%;
+        left: unset;
+    }
+    .special__section__body {
+        position: relative;
+        top: 46%;
+    }
+    .special__section__item {
+        position: relative;
+        height: 424px;
+        margin-bottom: 20px;
+        cursor: pointer;
+    }
+
+
+    .Travel-Reviews-content-head {
+        padding-top: 100px;
+    }
+
+    .modal-search-body__form {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        padding: 0 20px;
+    }
+    .Perfect-slider-head {
+        padding-top: 100px;
+    }
+    
+    .Breathtaking-Cities__head {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 100px 152px 0 152px;
+        text-align: center;
+        top: 0;
+        left: unset;
+    }
+    .list-sub-language-item-link {
+        margin-left: 40%;
+    }
+    /* .slider  */
+    .Slider {
+        position: relative;
+        width: 100%;
+        padding-top: 60%;
+    }
+    .Slider-text__country {
+        font-size: 4rem;
+        color: #fff;
+        position: absolute;
+        top: 30%;
+        left: 16%;
+        font-weight: 600;
+        text-transform: capitalize;
+        transform-origin: top;
+        animation: country 0.3s linear;
+    }
+    .Slider-text__content {
+        color: #fff;
+        font-size: 80px;
+        padding: 100px;
+        font-weight: 800;
+        animation: Slider-text 2.5s linear;
+    }
+    .Slider-text__title-1 {
+        font-size: 6.5rem;
+        color: #fff;
+        font-weight: 600;
+        position: absolute;
+        top: 45%;
+        left: 15%;
+        text-transform: capitalize;
+        transform-origin: left;
+        animation: title-1 1s linear;
+    }
+    .Slider-text__city {
+        position: absolute;
+        color: #fff;
+        top: 40%;
+        left: 75%;
+        font-size: 2rem;
+        text-transform: capitalize;
+        transform-origin: top;
+        animation: country 3s linear;
+    }
+    .Slider-text__tour {
+        font-size: 3.7rem;
+        color: #fff;
+        position: absolute;
+        top: 48%;
+        right: 12%;
+        font-weight: 600;
+        transform-origin: right;
+        animation: tour 3.1s linear;
+    }
+    .Slider-text__sale {
+        font-size: 1rem;
+        color: #fff;
+        background: red;
+        padding: 0 10px;
+        position: absolute;
+        top: 63%;
+        left: 36%;
+        transform-origin: left;
+        animation: title-1 5s linear;
+    }
+    .Slider-text__price {
+        font-size: 4rem;
+        color: #fff;
+        position: absolute;
+        top: 66%;
+        left: 43%;
+        transform-origin: left;
+        animation: price 5.05s linear;
+    }
+    .Slider-text__dola {
+        font-size: 1.5rem;
+        color: #fff;
+        position: absolute;
+        top: 69%;
+        left: 62%;
+        transform-origin: right;
+        animation: tour 5.1s linear;
+    }
+    .heade-main__logo{
+        flex: 0;
+    }
+    .nav {
+      flex: 0;
+    }
+    .nav__list-item {
+        padding: 0 10px;
+    }
+    .Perfect-Holiday-top {
+        position: absolute;
+        top: -35px;
+        left: 10%;
+    }
+    .Perfect-Holiday-top-form-div {
+        height: 80px;
+        background-color: var(--white-color--);
+        width: 200px;
+        display: flex;
+        align-items: center;
+    }
+    .detail-holiday__head {
+        padding-top: 100px;
+    }
+
+
+
+
+
+    .footer-list{
+        display: flex;
+        padding: 100px 20px;
+    }
+
+}
+/* moblie  */
+@media (max-width:46.1875em){
+    /*  phần dung chung  */
+    :root{
+        --white-color--: white;
+        --black-color--: black;
+        --background-color--: #1c1c1c;
+        --text-color--: #212121;
+        --primary-color--: #3fd0d4;
+        --hight-header : 46px;
+        --hight-header-main : 81px;
+    }
+    .app {
+        padding: 0 5px;
+    }
+    .container{
+        width: unset;
+    }
+    .nav {
+        display: none;
+    }
+    .heade-main__logo{
+        flex: 2;
+        text-align: center;
+        padding-left: 50px;
+        padding-top: 10px;
+    }
+    
+    .haeder-main__menu{
+        display: block;
+        font-size: 1.5rem;
+        cursor: pointer;
+        padding: 10px;
+    }
+    /* siler  */
+    .Slider{
+        padding-top: 70%;
+    }
+    .Slider-text__country {
+        font-size: 2rem;
+        color: #fff;
+        position: absolute;
+        top: 31%;
+        left: 17%;
+        font-weight: 600;
+        text-transform: capitalize;
+        transform-origin: top;
+        animation: country 0.3s linear;
+    }
+    .Slider-text__title-1 {
+        font-size: 3rem;
+        color: #fff;
+        font-weight: 600;
+        position: absolute;
+        top: 45%;
+        left: 16%;
+        text-transform: capitalize;
+        transform-origin: left;
+        animation: title-1 1s linear;
+    }
+    .Slider-text__city {
+        position: absolute;
+        color: #fff;
+        top: 42%;
+        left: 72%;
+        font-size: 1.3rem;
+        text-transform: capitalize;
+        transform-origin: top;
+        animation: country 3s linear;
+    }
+    .Slider-text__tour {
+        font-size: 1.7rem;
+        color: #fff;
+        position: absolute;
+        top: 48%;
+        right: 16%;
+        font-weight: 500;
+        transform-origin: right;
+        animation: tour 3.1s linear;
+    }
+    .Slider-text__sale {
+        font-size: 1rem;
+        color: #fff;
+        background: red;
+        padding: 0 10px;
+        position: absolute;
+        top: 64%;
+        left: 31%;
+        transform-origin: left;
+        animation: title-1 5s linear;
+    }
+    .Slider-text__price {
+        font-size: 3rem;
+        color: #fff;
+        position: absolute;
+        top: 65%;
+        left: 43%;
+        transform-origin: left;
+        animation: price 5.05s linear;
+    }
+    .Slider-text__dola {
+        font-size: 1.1rem;
+        color: #fff;
+        position: absolute;
+        top: 70%;
+        left: 70%;
+        transform-origin: right;
+        animation: tour 5.1s linear;
+    }
+    .Slider-text__title {
+        color: #fff;
+        font-size: 25px;
+        font-weight: 600;
+        transform: translateY(50px);
+        animation: Slider-text-moblie 1s linear;
+    }
+    .Slider-text__content {
+        color: #fff;
+        font-size: 43px;
+        padding: 29px 70px;
+        font-weight: 800;
+        transform: translateY(50px);
+        animation: Slider-text-moblie 2.5s linear;
+    }
+    .Slider-text__center {
+        color: #fff;
+        font-size: 16px;
+        max-width: 700px;
+        align-self: center;
+        line-height: 23px;
+        transform: translateY(50px);
+        animation: Slider-text-moblie 4s linear;
+    }
+    @keyframes Slider-text-moblie{
+        from{
+            opacity: 0;
+            transform: translateY(100px);
+        }
+        to{
+            opacity: 1;
+            transform: translateY(50px);
+        }
+    }
+    .Slider-click__icon {
+        border-radius: 30px;
+        font-size: 20px;
+        padding: 16px 20px;
+        cursor: pointer;
+    }
+    .Perfect-Holiday-top {
+        position: absolute;
+        top: -35px;
+        left: 20%;
+        display: none;
+    }
+
+    .footer-list{
+        display: flex;
+        padding: 100px 10px;
+    }
+    .footer-item{
+        margin-bottom: 30px;
+    }
+    .footer-item-body-info{
+        margin-bottom: 10px;
+    }
+
+
+ 
+
+    /* From-Our-Blog */
+    
+    .Perfect-Holiday__head {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 0 0px 100px 0px;
+        text-align: center;
+    }
+    
+    .From-Our-Blog {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 100px 0 0 0;
+    }
+
+    .From-Our-Blog-left-head {
+        margin-bottom: 50px;
+        text-align: center;
+    }
+    .Perfect-Holiday__head-title {
+        font-size: 1.7rem;
+        color: var(--primary-color--);
+        text-transform: capitalize;
+        line-height: 1rem;
+        margin-bottom: 10px;
+    }
+    .Perfect-Holiday__head-center {
+        font-size: 2.5rem;
+        color: var(--text-color--);
+        line-height: 4rem;
+        text-transform: capitalize;
+        margin-bottom: 25px;
+        font-weight: 600;
+    }
+    .Perfect-Holiday__head-text {
+        font-size: 1rem;
+        color: var(--text-color--);
+        text-transform: capitalize;
+    }
+    .Review-section-text{
+        padding: 0;
+    }
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        margin-left: -8px;
+        margin-right: -8px;
+    }
+    .Perfect-Holiday__body-item-link-Sites {
+        border-radius: 50%;
+        overflow: hidden;
+    }
+
+
+
+    /* special__section */
+
+    .special__section__item{
+        position: relative;
+        height: 400px;
+        margin-bottom: 20px;
+        cursor: pointer;
+    }
+    .special__section__head {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 0px;
+        text-align: center;
+        position: absolute;
+        top: 11%;
+        left: 0;
+    }
+    .special__section__body {
+        position: relative;
+        top: 26%;
+    }
+    .special__section__head-title {
+        font-size: 1.7rem;
+        color: var(--primary-color--);
+        text-transform: capitalize;
+        line-height: 2rem;
+        margin-bottom: 10px;
+    }
+    .special__section__head-center {
+        font-size: 2.5rem;
+        color: var(--text-color--);
+        line-height: 4rem;
+        text-transform: capitalize;
+        margin-bottom: 25px;
+        font-weight: 600;
+    }
+    .special__section__head-text {
+        font-size: 1rem;
+        color: var(--text-color--);
+        text-transform: capitalize;
+    }
+    .special__section__item-title {
+        position: absolute;
+        right: 8px;
+        top: 0px;
+        font-size: 1rem;
+        color: var(--white-color--);
+        background: var(--primary-color--);
+        padding: 5px 15px;
+    }
+
+
+
+
+    .Travel-Reviews-content-head {
+        padding-top: 100px;
+    }
+    .Travel-Reviews-content-title {
+        color: var(--white-color--);
+    }
+    .Travel-Reviews-content-content {
+        color: var(--white-color--);
+    }
+    .Travel-Reviews-content-text {
+        color: var(--white-color--);
+    }
+    .detail-holiday__head {
+        padding-top: 100px;
+    }
+    .Perfect-slider-head {
+        padding-top: 100px;
+    }
+
+
+
+    /* Breathtaking-Cities */
+    .Breathtaking-Cities__head {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 100px 0px 0 0px;
+        text-align: center;
+        top: 0;
+        left: unset;
+    }
+    .Breathtaking-Cities__head-title {
+        font-size: 1.7rem;
+        color: var(--white-color--);
+        text-transform: capitalize;
+        line-height: 2rem;
+        margin-bottom: 10px;
+    }
+    .Breathtaking-Cities__head-center{
+        font-size: 2.5rem;
+        color: var(--white-color--);
+        line-height: 4rem;
+        text-transform: capitalize;
+        margin-bottom: 20px;
+        font-weight: 600;
+    }
+    .Breathtaking-Cities__head-text {
+        font-size: 1rem;
+        color: var(--white-color--);
+        text-transform: capitalize;
+    }
+
+
+    /* special__section */
+    .special__section {
+        background-image: url(../img/h1-background-img-1.jpg);
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 1800px;
+        padding-top: unset;
+        position: relative;
+    }
+
+
+
+    /* Breathtaking-Cities  */
+    .Breathtaking-Cities {
+        width: 100%;
+        height: 650px;
+        position: relative;
+    }
+
+
+
+
+
+    /* Breathtaking-Cities  */
+    .Breathtaking-Cities__body {
+        text-align: center;
+        position: absolute;
+        bottom: -22px;
+        left: unset;
+    }
+    .Breathtaking-Cities__body-img {
+        width: 80%;
+        height: 100%;
+    }
+
+
+
+    /* Destination */
+    .Destination {
+        background-image: url(../img/h1-background-img-2.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top;
+        height: 1590px;
+        position: relative;
+    }
+    .Destination-head {
+        position: relative;
+        top: 16%;
+    }
+    .Destination-body {
+        position: relative;
+        top: 14%;
+    }
+    .Destination-body-list-item {
+        position: relative;
+        margin-bottom: 28px;
+        height: 317px;
+    }
+
+    /* Pack-Up-And-Go  */
+    .Pack-Upd-An-Go {
+        padding: 100px 0 100px 0;
+    }
+    .Pack-Up-And-Go__body-list {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .Pack-Up-And-Go__body-list-item{
+        margin-bottom: 46px;
+    }
+    
+    .Review-section {
+        text-align: center;
+        padding: 100px 0 0 0;
+    }
+
+
+    .modal-search-body {
+        position: relative;
+        margin: auto;
+        width: 1800px;
+        height: 75px;
+        transform-origin: left;
+        animation: modal-search-body linear 1s;
+        z-index: 2;
+    }
+    .modal-search-body__form {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        padding: 0 5px;
+    }
+    .go-top {
+        position: fixed;
+        color: #fff;
+        font-size: 1.5rem;
+        background-color: var(--primary-color--);
+        width: 60px;
+        height: 60px;
+        right: 15px;
+        bottom: 20px;
+        display: block;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 60px;
+        text-decoration: none;
+        box-shadow: 0px 1px 10px rgba(0, 0,0, 0.8);
+    }
+
+    .Breathtaking-Cities__body-buttom {
+        position: absolute;
+        top: 40%;
+        left: 48%;
+        border: none;
+        outline: none;
+        padding: 15px 24px;
+        border-radius: 50%;
+        background-color: var(--primary-color--);
+    }
+  
+
+}
