@@ -1876,6 +1876,7 @@ p.From-Our-Blog-right-text {
 h3.Subcribe-now-title {
     font-size: 1.3rem;
     color: var(--white-color--);
+    padding-right: 5px;
 }
 .Subcribe-now-button {
     border: none;
