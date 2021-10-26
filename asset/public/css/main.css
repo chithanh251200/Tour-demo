@@ -36,6 +36,10 @@ ul{
 
 
 /* phần main */
+.app{
+    overflow: hidden;
+    box-shadow: 0 , 1px , 10px , rgb(0 0 0 / 70%);
+}
 
 .tabar-header {
     display: flex;
@@ -272,7 +276,8 @@ ul{
 
 .header-main{
     position: fixed;
-    width: 100%;
+    left: 0;
+    right: 0;
     height:var(--hight-header-main);
     display: flex;
     align-items: center;
@@ -1188,22 +1193,27 @@ i.Perfect-Holiday-top-form-icon{
     background-size: cover;
     background-repeat: no-repeat;
     height: 100%;
-}
-.Breathtaking-Cities__body {
-    text-align: center;
-}
-.Breathtaking-Cities__body {
-    text-align: center;
     position: absolute;
-    bottom: -30px;
-    left: 565px;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: -1;
 }
+.Breathtaking-Cities__body {
+    text-align: center;
+}
+.Breathtaking-Cities__body-link {
+    position: absolute;
+    bottom: -40px;
+    padding: 0px 150px;
+}
+
 .Breathtaking-Cities__body-link {
     display: block;
 }
 .Breathtaking-Cities__body-buttom {
     position: absolute;
-    top: 50%;
+    top: 70%;
     border: none;
     outline: none;
     padding: 25px 35px;
@@ -1220,14 +1230,11 @@ i.Perfect-Holiday-top-form-icon{
     margin-bottom: 16px;
 }
 .Breathtaking-Cities__head{
-    position: absolute;
     display: flex;
     align-items: center;
     flex-direction: column;
     padding: 100px 300px 0 300px;
     text-align: center;
-    top: 0;
-    left: 20%;
 }
 .Breathtaking-Cities__head-title{
     font-size: 2rem;
